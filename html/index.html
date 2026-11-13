@@ -15,15 +15,25 @@
             font-style: italic;
             font-size: medium;
         }
-        button {
+        a {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: medium;
+            text-decoration: none;
+            
+            color: black;
+            background-color: rgb(240, 240, 240);
             
             min-height: fit-content;
             min-width: fit-content;
-            width: 150px;
+            padding: 15px;
             
-            padding: 7px;
+            border: 1px solid black;
+            border-radius: 4%;
+            margin-top: 20px;
+        }
+        a:hover {
+            transition: 0.4s;
+            background-color: rgb(230, 230, 230);
         }
     </style>
 </head>
@@ -31,6 +41,7 @@
     <h1>¡Bienvenido!</h1>
     <hr>
     <p>Esta es una API de prueba creada por Unai Manterola :D</p>
-    <a href="api.html"><button>API</button></a>
+    <br>
+    <a href="/api">API</a>
 </body>
 </html>

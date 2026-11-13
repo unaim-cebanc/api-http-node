@@ -10,20 +10,60 @@
             font-weight: bold;
             margin-bottom: 0;
         }
+        
         h2 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: bold;
             margin-bottom: 0;
+            margin-top: 50px;
         }
-        button {
+        
+        a {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: medium;
+            text-decoration: none;
+            
+            color: black;
+            background-color: rgb(240, 240, 240);
             
             min-height: fit-content;
             min-width: fit-content;
-            width: 150px;
+            padding: 15px;
             
-            padding: 7px;
+            border: 1px solid black;
+            border-radius: 4%;
+            margin-top: 20px;
+        }
+        a:hover {
+            transition: 0.4s;
+            background-color: rgb(230, 230, 230);
+        }
+        
+        .volver {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none;
+            
+            color: black;
+            background-color: rgb(240, 240, 240);
+            
+            min-height: fit-content;
+            min-width: fit-content;
+            padding: 15px;
+            
+            border: 1px solid black;
+            border-radius: 3%;
+            
+            
+            margin-top: 20px;
+            margin-right: 50px;
+            float: right;
+        }
+        .volver:hover {
+            transition: 0.4s;
+            background-color: rgb(230, 230, 230);
         }
     </style>
 </head>
@@ -34,11 +74,15 @@
     <!-- Sección clientes -->
     <h2>Clientes</h2>
     <hr>
-    <a href="clientes.html"><button>Clientes</button></a>
+    <br>
+    <a href="/clientes">Clientes</a>
     
     <!-- Sección pedidos -->
     <h2>Pedidos</h2>
     <hr>
-    <a href="pedidos.html"><button>Pedidos</button></a>
+    <br>
+    <a href="/pedidos">Pedidos</a>
+    <br>
+    <a href="/" class="volver">Volver al inicio</a>
 </body>
 </html>
