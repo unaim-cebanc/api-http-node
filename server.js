@@ -13,7 +13,40 @@ const processRequest = (req, res) => {
             
             res.statusCode = 200;
             res.end(data);
-        })
+        });
+    } else if (req.url === '/api') {
+        fs.readFileSync('html/api.html', (err, data) => {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            
+            res.statusCode = 200;
+            res.end(data);
+        });
+    } else if (req.url === '/clientes') {
+        fs.readFileSync('html/clientes.html', (err, data) => {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            
+            res.statusCode = 200;
+            res.end(data);
+        });
+    } else if (req.url === '/pedidos') {
+        fs.readFileSync('html/pedidos.html', (err, data) => {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            
+            res.statusCode = 200;
+            res.end(data);
+        });
+    } else {
+        res.statusCode = 404;
+        res.end(`Error ${res.statusCode}: No encontrado`)
     }
 }
 
