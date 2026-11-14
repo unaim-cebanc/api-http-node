@@ -16,19 +16,19 @@ function verificarUrl(url) {
 }
 
 function logRequest(req) {
-    yellowBold('---------- REQUEST ----------');
-    yellowBold(`Requestl URL: ${req.url}`);
-    yellowBold(`Request Method: ${req.method}`);
+    console.log(yellowBold('\n---------- REQUEST ----------'));
+    console.log(yellowBold(`Requestl URL: ${req.url}`));
+    console.log(yellowBold(`Request Method: ${req.method}`));
 }
 
 function logResponse(res) {
-    yellowBold('---------- RESPONSE ----------');
+    console.log(yellowBold('\n---------- RESPONSE ----------'));
     if (res.statusCode === 200) {
-        greenBold(`Response sent: ${res.url}`);
-        greenBold(`Status code: ${res.statusCode}`);
+        console.log(greenBold('Response sent: OK'));
+        console.log(greenBold(`Status code: ${res.statusCode}`));
     } else {
-        redBold('Response sent: Not Found 404');
-        redBold(`Status code: ${res.statusCode}`);
+        console.log(redBold('Response sent: Not Found 404'));
+        console.log(redBold(`Status code: ${res.statusCode}`));
     }
 }
 
@@ -40,7 +40,6 @@ const processRequest = (req, res) => {
     const archivo = resultado.archivo
     res.statusCode = resultado.statusCode
     
-    logResponse(res);
     fs.readFile(archivo, (err, data) => {
         if (err) {
             console.log(err);
@@ -48,6 +47,8 @@ const processRequest = (req, res) => {
         }
         res.end(data);
     });
+    
+    logResponse(res);
 }
 
 const server = http.createServer(processRequest);
