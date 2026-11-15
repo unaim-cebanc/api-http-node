@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pedidos</title>
+    <style>
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        hr {
+            margin-bottom: 30px;
+        }
+        code {
+            border-radius: 3px;
+            background-color: rgb(235, 235, 235);
+            padding: 15px;
+            font-size: large;
+        }
+        div {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        a {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            text-decoration: none;
+            
+            color: black;
+            background-color: rgb(240, 240, 240);
+            
+            min-height: fit-content;
+            min-width: fit-content;
+            padding: 15px;
+            
+            border: 1px solid black;
+            border-radius: 4%;
+            margin-top: 20px;
+            
+            position: static;
+            margin: 0;
+        }
+        a:hover {
+            transition: 0.4s;
+            background-color: rgb(230, 230, 230);
+        }
+    </style>
 </head>
 <body>
     <h1>Pedidos</h1>
-    <p>TODO: mostrar pedidos</p>
+    <hr>
+    <br>
+    <code>
+        [{ id: 1, clienteId: 1, producto: "Vidrio templado 6mm", cantidad: 10 }, { id: 2, clienteId: 2, producto: "Espejo 80x120", cantidad: 2 }]
+    </code>
+    <div>
+        <a href="/api">Volver</a>
+        <a href="/">Volver al inicio</a>
+    </div>
 </body>
 </html>

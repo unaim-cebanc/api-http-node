@@ -17,7 +17,13 @@
             margin-bottom: 0;
             margin-top: 50px;
         }
-        
+        div {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
         a {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: medium;
@@ -33,35 +39,11 @@
             border: 1px solid black;
             border-radius: 4%;
             margin-top: 20px;
+            
+            position: static;
+            margin: 0;
         }
         a:hover {
-            transition: 0.4s;
-            background-color: rgb(230, 230, 230);
-        }
-        
-        .volver {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: medium;
-            font-weight: bold;
-            font-style: italic;
-            text-decoration: none;
-            
-            color: black;
-            background-color: rgb(240, 240, 240);
-            
-            min-height: fit-content;
-            min-width: fit-content;
-            padding: 15px;
-            
-            border: 1px solid black;
-            border-radius: 3%;
-            
-            
-            margin-top: 20px;
-            margin-right: 50px;
-            float: right;
-        }
-        .volver:hover {
             transition: 0.4s;
             background-color: rgb(230, 230, 230);
         }
@@ -83,6 +65,8 @@
     <br>
     <a href="/pedidos">Pedidos</a>
     <br>
-    <a href="/" class="volver">Volver al inicio</a>
+    <div>
+        <a href="/">Volver al inicio</a>
+    </div>
 </body>
 </html>
