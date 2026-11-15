@@ -57,6 +57,8 @@ El módulo `colores.js` usa `picocolors` para imprimir mensajes de consola con c
 
 - URL: `/`
 - Muestra una pantalla de bienvenida con un enlace que lleva a la sección API.
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a54fe244-9151-4c1c-ba4b-6d1b9b6e686b" />
+
 
 ### API
 
@@ -64,6 +66,8 @@ El módulo `colores.js` usa `picocolors` para imprimir mensajes de consola con c
 - Muestra un menú con enlaces a:
   - `/clientes`
   - `/pedidos`
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f71f5afa-ec90-42af-ad9c-8137baf06815" />
+
 
 ### Clientes
 
@@ -73,6 +77,8 @@ El módulo `colores.js` usa `picocolors` para imprimir mensajes de consola con c
 ```json
 [{ id: 1, nombre: "Ana López" }, { id: 2, nombre: "Vidrios Norte S.L." }, { id: 3, nombre: "Cristalería Sur" }]
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a57ea559-d9b6-4587-8f98-ca334460c0b4" />
+
 
 ### Pedidos
 
@@ -82,7 +88,10 @@ El módulo `colores.js` usa `picocolors` para imprimir mensajes de consola con c
 ```json
 [{ id: 1, clienteId: 1, producto: "Vidrio templado 6mm", cantidad: 10 }, { id: 2, clienteId: 2, producto: "Espejo 80x120", cantidad: 2 }]
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/999c3698-28b6-45a9-be67-ddd1c6341dcc" />
+
 
 ### 404
 
 Para una URL no válida, el servidor devuelve la página `notFound.html` con el mensaje `Error 404 - Page not found`.
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/537a1b0c-67b7-412b-afed-526824ad75b1" />
