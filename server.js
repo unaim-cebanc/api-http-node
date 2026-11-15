@@ -17,12 +17,12 @@ function verificarUrl(url) {
 
 function logRequest(req) {
     console.log(yellowBold('\n---------- REQUEST ----------'));
-    console.log(yellowBold(`Requestl URL: ${req.url}`));
+    console.log(yellowBold(`Request URL: ${req.url}`));
     console.log(yellowBold(`Request Method: ${req.method}`));
 }
 
 function logResponse(res) {
-    console.log(yellowBold('\n---------- RESPONSE ----------'));
+    console.log(yellowBold('\n---------- RESPONSE ---------'));
     if (res.statusCode === 200) {
         console.log(greenBold('Response sent: OK'));
         console.log(greenBold(`Status code: ${res.statusCode}`));
